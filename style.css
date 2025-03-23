@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #eaddff;
+    border: 1px solid #6F5E5E;
+    text-align: center;
+    padding: 0px;
+    font-size: 0.6em;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px; 
+    left: 15px; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    background-color: #6F5E5E;
+    transition: all 0.4s ease;
+}
+
+.navbar:hover .line {
+    transform: scale(1.1); 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    padding: 25px;
+}
+
+.content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 900px;
+    width: 100%; 
+}
+
+.text-content {
+    margin-right: 40px;
+}
+
+.content h1 {
+    font-size: 2em;
+}
+
+.content h2 {
+    font-size: 1em;
+}
+
+.content p {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+ol {
+    font-size: 0.8em;
+}
+
+ul {
+    font-size: 0.8em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0.99;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.container, .content, .text-content, .image, .footer, ol, ul {
+    animation: fadeIn 1.5s ease-in;
+}
